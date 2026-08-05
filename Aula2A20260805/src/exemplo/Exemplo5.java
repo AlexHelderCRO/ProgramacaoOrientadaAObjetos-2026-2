@@ -11,7 +11,6 @@ public class Exemplo5 {
 		int valor = teclado.nextInt();
 //		String texto = teclado.nextLine();
 //		double real = teclado.nextDouble();
-		teclado.close();
 		int dobro = valor*2;
 		System.out.println("O dobro vale: "+dobro);
 	}
