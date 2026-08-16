@@ -19,6 +19,7 @@ public class Menu11MenuRepeticaoBunitinho {
 				JOptionPane.showMessageDialog(null, "Tchau!");
 			}
 		}while(opcao != JOptionPane.CLOSED_OPTION);
+		JOptionPane.showMessageDialog(null, "Programa encerrado com sucesso.");
 	}
 
 }
