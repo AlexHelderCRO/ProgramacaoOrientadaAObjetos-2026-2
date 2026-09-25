@@ -2,7 +2,7 @@ package lista1;
 
 import java.util.Scanner;
 
-public class L1Q1e3 {
+public class L1Q3ex1 {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
