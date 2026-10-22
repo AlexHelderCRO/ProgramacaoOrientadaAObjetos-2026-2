@@ -1,0 +1,21 @@
+package aula;
+
+import javax.swing.JOptionPane;
+
+public class Biblioteca {
+
+	public static void main(String[] args) {
+		Aluno[] vetor = new Aluno[50];
+		
+		String[] opcoes = {"Fazer Empréstimo", "Efetuar Devolução", "Visualizar Livros Emprestados"};
+		int opcao;
+		
+		do {
+			int matricula = Integer.parseInt(JOptionPane.showInputDialog("Qual a matricula"));
+			opcao = JOptionPane.showOptionDialog(null, "Qual a ação que o aluno quer fazer?", "Biblioteca", 
+					JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, null);
+			
+		} while(opcao != JOptionPane.CLOSED_OPTION);
+	}
+
+}

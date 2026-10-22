@@ -1,0 +1,14 @@
+package aula;
+
+import javax.swing.JOptionPane;
+
+public class ExemploExcecao {
+
+	public static void main(String[] args) {
+		int a = Integer.parseInt(JOptionPane.showInputDialog("Digite um dividendo:"));
+		int b = Integer.parseInt(JOptionPane.showInputDialog("Digite um divisor:"));
+		int c = a/b;
+		JOptionPane.showMessageDialog(null, "A divisão deu: "+c);
+	}
+
+}

@@ -1,0 +1,27 @@
+package aula;
+
+import javax.swing.*;
+
+public class MinhaJanela extends JFrame {
+	JLabel rotulo = new JLabel("Digite algo:");
+	JTextField campo = new JTextField(10);
+	JButton botao = new JButton("Acrescentar");
+	JTextArea area = new JTextArea(5, 10);
+	
+	public MinhaJanela() {
+		setTitle("Minha Janela");
+		add(rotulo);
+		add(campo);
+		add(botao);
+		add(area);
+	}
+	
+	public static void main(String[] args) {
+		MinhaJanela janela = new MinhaJanela();
+		janela.setSize(400, 300);
+		janela.setVisible(true);
+		janela.setDefaultCloseOperation(EXIT_ON_CLOSE); // Para encerrar o programa ao clicar no "X" da barra de título.
+		janela.setLocationRelativeTo(null); // Centraliza a janela
+	}
+
+}

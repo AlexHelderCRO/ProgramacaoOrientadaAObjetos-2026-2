@@ -1,0 +1,5 @@
+package aula;
+
+public class Aluno {
+	String[] livrosEmprestados = new String[5];
+}

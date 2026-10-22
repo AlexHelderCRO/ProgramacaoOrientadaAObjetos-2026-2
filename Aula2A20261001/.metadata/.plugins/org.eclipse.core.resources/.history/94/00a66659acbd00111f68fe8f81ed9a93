@@ -1,0 +1,42 @@
+package aula;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class MinhaJanela extends JFrame {
+	JLabel rotulo = new JLabel("Digite algo:");
+	JTextField campo = new JTextField(10);
+	JButton botao = new JButton("Acrescentar");
+	JTextArea area = new JTextArea(5, 10);
+	
+	public MinhaJanela() {
+		setTitle("Minha Janela");
+		setLayout(new FlowLayout());
+		add(rotulo);
+		add(campo);
+		add(botao);
+		add(area);
+		Ouvinte ouvinte = new Ouvinte();
+		botao.addActionListener(ouvinte);
+	}
+	
+	public static void main(String[] args) {
+		MinhaJanela janela = new MinhaJanela();
+		janela.setSize(200, 250);
+		janela.setVisible(true);
+		janela.setDefaultCloseOperation(EXIT_ON_CLOSE); // Para encerrar o programa ao clicar no "X" da barra de título.
+		janela.setLocationRelativeTo(null); // Centraliza a janela
+	}
+
+}
+
+class Ouvinte implements ActionListener {
+	public void actionPerformed(ActionEvent e) {
+		JOptionPane.showMessageDialog(null, "Clicou no botão.");
+		
+	}
+	
+}

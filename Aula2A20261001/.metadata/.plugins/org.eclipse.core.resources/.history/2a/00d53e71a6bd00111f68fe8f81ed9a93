@@ -1,0 +1,14 @@
+package aula;
+
+import javax.swing.*;
+
+public class MinhaJanela extends JFrame {
+
+	public static void main(String[] args) {
+		MinhaJanela janela = new MinhaJanela();
+		janela.setSize(400, 300);
+		//janela.setVisible(true);
+
+	}
+
+}

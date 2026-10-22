@@ -1,0 +1,21 @@
+package aula;
+
+import javax.swing.*;
+
+public class MinhaJanela extends JFrame {
+	JLabel rotulo = new JLabel("Digite algo:");
+	
+	public MinhaJanela() {
+		setTitle("Minha Janela");
+		add(rotulo);
+	}
+	
+	public static void main(String[] args) {
+		MinhaJanela janela = new MinhaJanela();
+		janela.setSize(400, 300);
+		janela.setVisible(true);
+		janela.setDefaultCloseOperation(EXIT_ON_CLOSE); // Para encerrar o programa ao clicar no "X" da barra de título.
+		janela.setLocationRelativeTo(null); // Centraliza a janela
+	}
+
+}

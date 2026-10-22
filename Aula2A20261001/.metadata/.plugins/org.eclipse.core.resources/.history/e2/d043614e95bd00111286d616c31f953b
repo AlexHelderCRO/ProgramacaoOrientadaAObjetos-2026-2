@@ -1,0 +1,17 @@
+package aula;
+
+public class Aluno {
+	String[] livrosEmprestados = new String[5];
+	
+	public void efetuarEmprestimo() {
+		
+	}
+	
+	public void realizarDevolucao() {
+		
+	}
+	
+	public void visualizarLivrosEmprestados() {
+		
+	}
+}
